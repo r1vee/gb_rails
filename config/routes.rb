@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'about/contacts', to: 'about#contacts'
-
   get 'index/show'
 
   root 'index#show'
