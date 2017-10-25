@@ -8,8 +8,10 @@ html
   body
     .container
       header
+        .map
+          iframe[src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.367854311419!2d37.52603671608062!3d55.64781060755189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d39023c80ed%3A0xe1a49ebcb73bc2c1!2z0J_RgNC-0YTRgdC-0Y7Qt9C90LDRjyDRg9C7LiwgOTYsINCc0L7RgdC60LLQsCwgMTE3NDg1!5e0!3m2!1sru!2sru!4v1505399371066" width="100%" height="350px" frameborder="0" allowfullscreen]
+ 
         .logo = image_tag 'logo.png' 
-
         .info
           h1
             | Добро пожаловать!
@@ -31,7 +33,7 @@ html
               a[href="catalog.html"]
                 | КАТАЛОГ
             li
-              a = link_to '/about/contacts'
+              a[href="contacts"]
                 | КОНТАКТЫ
             li
               a[href="contacts.html"]
