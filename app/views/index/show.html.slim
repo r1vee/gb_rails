@@ -25,16 +25,16 @@ html
               h4
                 | МЕНЮ
             li
-              a[href="index.html"]
+              a[href="/index/show"]
                 | ГЛАВНАЯ
             li
-              a[href="catalog.html"]
+              a[href="#"]
                 | КАТАЛОГ
             li
-              a = link_to '/about/contacts'
-                | КОНТАКТЫ
+              a[href="/about/contacts"]
+                | КОНТАКТЫ 
             li
-              a[href="contacts.html"]
+              a[href="/about/contacts"]
                 | О НАС
               ul.submenu
                 li
@@ -46,7 +46,7 @@ html
                 li
                   a[href="#"]
                     | Вкладка3
-        .product
+        .main_content
           h5
             | НОВИНКИ
           
@@ -54,18 +54,18 @@ html
       footer
         .social
           a = link_to 'https://www.facebook.com/' 
-            = image_tag('facebook.png', :width=>385, :height=>150)
+            = image_tag 'facebook.png', :width=>385, :height=>150
           a = link_to 'https://twitter.com/oldLentach' 
-            = image_tag('twit.png', :width=>385, :height=>150)
+            = image_tag 'twit.png', :width=>385, :height=>150
           a = link_to 'https://ru.pinterest.com/source/hellyeahsupermanandwonderwoman.tumblr.com/' 
-            = image_tag('print.png', :width=>385, :height=>150)
+            = image_tag 'print.png', :width=>385, :height=>150
 
         .category
           h7
             | Category
           ul
             li
-              a[href="index.html"]
+              a[href="index/show"]
                 | Home
             li
               a[href="#"]

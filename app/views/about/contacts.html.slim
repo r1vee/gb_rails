@@ -7,19 +7,9 @@ html
       | Доставка 
   body
     .container
-      header
+      .header_map
         .map
           iframe[src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.367854311419!2d37.52603671608062!3d55.64781060755189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d39023c80ed%3A0xe1a49ebcb73bc2c1!2z0J_RgNC-0YTRgdC-0Y7Qt9C90LDRjyDRg9C7LiwgOTYsINCc0L7RgdC60LLQsCwgMTE3NDg1!5e0!3m2!1sru!2sru!4v1505399371066" width="100%" height="350px" frameborder="0" allowfullscreen]
- 
-        .logo = image_tag 'logo.png' 
-        .info
-          h1
-            | Добро пожаловать!
-        .news
-          h2
-            | СТАРТ НОВОГО СЕЗОНА
-          h3
-            | В КАТАЛОГ
       .content
         nav
           ul.menu
@@ -27,16 +17,16 @@ html
               h4
                 | МЕНЮ
             li
-              a[href="index.html"]
+              a[href="/index/show"]
                 | ГЛАВНАЯ
             li
-              a[href="catalog.html"]
+              a[href="#"]
                 | КАТАЛОГ
             li
-              a[href="contacts"]
-                | КОНТАКТЫ
+              a[href="/about/contacts"]
+                | КОНТАКТЫ 
             li
-              a[href="contacts.html"]
+              a[href="/about/contacts"]
                 | О НАС
               ul.submenu
                 li
@@ -48,26 +38,64 @@ html
                 li
                   a[href="#"]
                     | Вкладка3
-        .product
-          h5
-            | НОВИНКИ
+        .about_content
+          .nav_bread
+            a[href="index/show"]
+              | ГЛАВНАЯ
+            |  / 
+            a[href="about/contacts"]
+              | КОНТАКТЫ
+          fieldset
+            legend
+              | ПОЛНОЕ ИМЯ
+            input[type="text" size="40" placeholder="e.g.  robert smith"]
+          fieldset
+            legend
+              | EMAIL
+            input[type="email" size="40" placeholder="e.g. name@nome.com"]
+          fieldset
+            legend
+              | КОМПАНИЯ
+            input[type="text" size="40" placeholder="e.g. your company (optional)"]
+          fieldset
+            legend
+              | ТЕМА ПИСЬМА
+            input[type="text" size="40" placeholder="e.g. info"]
+          fieldset
+            legend
+              | ТЕКС ПИСЬМА
+            input[type="text" size="40" placeholder="e.g. info"]
+          input.butt[type="submit" value="Отправить"]
+          .about_about
+            p
+              | АДРЕС
+            p
+              | Адрес: г.Москва, ул.Профсоюзная, д.96
+            p
+              | Телефон 
+              a[href="tel:+7-965-395-6343"]
+                | +7 (965) 395-6343
+            p
+              | Email: 
+              a[href="mailto:r1ve@yahoo.com"]
+                | r1ve@yahoo.com
           
 
       footer
         .social
           a = link_to 'https://www.facebook.com/' 
-            = image_tag('facebook.png', :width=>385, :height=>150)
+            = image_tag 'facebook.png', :width=>385, :height=>150
           a = link_to 'https://twitter.com/oldLentach' 
-            = image_tag('twit.png', :width=>385, :height=>150)
+            = image_tag 'twit.png', :width=>385, :height=>150
           a = link_to 'https://ru.pinterest.com/source/hellyeahsupermanandwonderwoman.tumblr.com/' 
-            = image_tag('print.png', :width=>385, :height=>150)
+            = image_tag 'print.png', :width=>385, :height=>150
 
         .category
           h7
             | Category
           ul
             li
-              a[href="index.html"]
+              a[href="index/show"]
                 | Home
             li
               a[href="#"]

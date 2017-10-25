@@ -23,12 +23,18 @@
 }
 
 .container {
-    min-width: 500px;
-    max-width: 1500px;
-    width: 90%;
-    margin: auto;
+  min-width: 500px;
+  max-width: 1500px;
+  width: 80%;
+  margin: auto;
   margin-top: 0;
   background-color: #f8f8f8;
+}
+
+.logo {
+  position: relative;
+  left: 136px;
+  top: 142px;
 }
 
 header {
@@ -57,8 +63,8 @@ header {
   
 .info {
   position: relative;
-  left: 175px;
-  top: 242px;
+  left: 136px;
+  top: 260px;
   background-color: #FFF500;
   width: 268px;
   height: 300px;
@@ -73,6 +79,10 @@ header {
 .info h1 {
   padding-top: 60px;
   font: normal 32px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.info p {
+  font: italic 16px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .news {
@@ -103,12 +113,8 @@ header {
   text-align: center;
 }
 
-.info p {
-  font: italic 16px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
 .content {
-  width: 95%;
   margin: 25px auto;
 }
 
@@ -170,32 +176,31 @@ header {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.product { 
+.main_content {
   background-color: #f8f8f8;
   display: block;
   position: absolute;
   left: 667px;
   top: 681px;
-  width: 870px;
+  width: 45%;
   height: 700px;
   z-index: 1;
 }
 
-.product h5 {
+.main_content h5 {
   padding: 26px;
   font: 22px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.about_content { 
+  background-color: #f8f8f8;
+  display: block;
+  position: absolute;
+  left: 667px;
+  top: 370px;
+  width: 870px;
+  height: 700px;
+  z-index: 1;
 }
 
 .nav_bread a {
@@ -210,11 +215,43 @@ header {
 
 
 
+fieldset {
+  border: 0;
+  font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 25px;
+}
 
+fieldset input {
+  padding-left: 15px;
+  height: 30px;
+  font: 16px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
+.butt  {
+  color: #000000;
+  background: #FFF500;
+  border: #FFF500;
+  height: 40px;
+  width: 110px;
+  font: 16px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
-
+.about_about {
+  position: relative;
+  float: right;
+  left: -100px;
+  top: -400px;
+  font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
   
+
+
+
+
+
+
+
+
 
 
 
