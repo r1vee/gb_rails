@@ -1,181 +1,46 @@
-doctype html
-html
-  head
-    meta charset="utf-8"
-    = stylesheet_link_tag "application", media: "all"
-    title
-      | Доставка 
-  body
-    .container
-      .header_map
-        .map
-          iframe[src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.367854311419!2d37.52603671608062!3d55.64781060755189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d39023c80ed%3A0xe1a49ebcb73bc2c1!2z0J_RgNC-0YTRgdC-0Y7Qt9C90LDRjyDRg9C7LiwgOTYsINCc0L7RgdC60LLQsCwgMTE3NDg1!5e0!3m2!1sru!2sru!4v1505399371066" width="100%" height="350px" frameborder="0" allowfullscreen]
-      .content
-        .about_content
-          .nav_bread
-            = link_to '/index/show'
-              | ГЛАВНАЯ
-            |  / 
-            = link_to '/about/contacts'
-              | КОНТАКТЫ
-          .mailto
-            fieldset
-              legend
-                | ПОЛНОЕ ИМЯ
-              input[type="text" size="40" placeholder="e.g.  robert smith"]
-            fieldset
-              legend
-                | EMAIL
-              input[type="email" size="40" placeholder="e.g. name@nome.com"]
-            fieldset
-              legend
-                | КОМПАНИЯ
-              input[type="text" size="40" placeholder="e.g. your company (optional)"]
-            fieldset
-              legend
-                | ТЕМА ПИСЬМА
-              input[type="text" size="40" placeholder="e.g. info"]
-            fieldset
-              legend
-                | ТЕКС ПИСЬМА
-              input[type="text" size="40" placeholder="e.g. info"]
-            input.butt[type="submit" value="Отправить"]
-          .about_about
-            p
-              | АДРЕС
-            p
-              | Адрес: г.Москва, ул.Профсоюзная, д.96
-            p
-              | Телефон 
-              = link_to "tel:+7-965-395-6343"
-                | +7 (965) 395-6343
-            p
-              | Email: 
-              = link_to "mailto:r1ve@yahoo.com"
-                | r1ve@yahoo.com
-        ul.menu
-          li
-            h4
-              | МЕНЮ
-          li
-            = link_to '/index/show'
-              | ГЛАВНАЯ
-          li
-            = link_to '#'
-              | КАТАЛОГ
-          li
-            = link_to '/about/contacts'
-              | КОНТАКТЫ 
-          li
-            = link_to '/about/contacts'
-              | О НАС
-            ul.submenu
-              li
-                = link_to '#'
-                  | Вкладка1
-              li
-                = link_to '#'
-                  | Вкладка2
-              li
-                = link_to '#'
-                  | Вкладка3
-  
+- content_for :header do
+  .map
+    iframe[src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.367854311419!2d37.52603671608062!3d55.64781060755189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d39023c80ed%3A0xe1a49ebcb73bc2c1!2z0J_RgNC-0YTRgdC-0Y7Qt9C90LDRjyDRg9C7LiwgOTYsINCc0L7RgdC60LLQsCwgMTE3NDg1!5e0!3m2!1sru!2sru!4v1505399371066" width="100%" height="350px" frameborder="0" allowfullscreen]
 
-      footer
-        .social
-          = link_to 'https://www.facebook.com/'
-            = image_tag 'facebook.png', :width=>385
-          = link_to 'https://twitter.com/oldLentach' 
-            = image_tag 'twit.png', :width=>385
-          = link_to 'https://ru.pinterest.com/source/hellyeahsupermanandwonderwoman.tumblr.com/' 
-            = image_tag 'print.png', :width=>385
-
-        .category
-          h7
-            | Category
-          ul
-            li
-              = link_to '/index/show'
-                | Home
-            li
-              = link_to '#'
-                | about us
-            li
-              = link_to '#'
-                | eshop
-            li
-              = link_to '#'
-                | Features
-            li
-              = link_to '#'
-                | new collection
-            li
-              = link_to '#'
-                | blog
-            li
-              = link_to '#'
-                | contact
-        .account
-          h7
-            | Our Account
-          li
-            = link_to '#'
-              | Your Account
-          li
-            = link_to '#'
-              | Personal information
-          li
-            = link_to '#'
-              | Addresses
-          li
-            = link_to '#'
-              | Discount
-          li
-            = link_to '#'
-              | Orders history
-          li
-            = link_to '#'
-              | Search Terms
-        .suppor
-          h7
-            | Our Support
-          li
-            = link_to '#'
-              | Site Map
-          li
-            = link_to '#'
-              | Search Terms
-          li
-            = link_to '#'
-              | Advanced Search
-          li
-            = link_to '#'
-              | Mobile
-          li
-            = link_to '#'
-              | Contact Us
-          li
-            = link_to '#'
-              | Addresses
-        .newsletter
-          h7
-            | Newsletter
-          br
-          input[type="email" placeholder="Ваш email" required]
-          input[type="submit" value="SUBMIT"]
-        .aboutus
-          h7
-            | About Us
-          p
-            | Телефон 
-            = link_to "tel:+7-965-395-6343"
-              | +7 (965) 395-6343
-          p
-            | Email: 
-            = link_to "mailto:r1ve@yahoo.com"
-              | r1ve@yahoo.com
-          p
-            | Адрес: г.Москва, ул.Профсоюзная, д.96
-        .copyr
-          h6
-            | © Все права защищены
+.about_content
+  .nav_bread
+    = link_to '/index/show'
+      | ГЛАВНАЯ
+    |  / 
+    = link_to '/about/contacts'
+      | КОНТАКТЫ
+  .mailto
+    fieldset
+      legend
+        | ПОЛНОЕ ИМЯ
+      input[type="text" size="40" placeholder="e.g.  robert smith"]
+    fieldset
+      legend
+        | EMAIL
+      input[type="email" size="40" placeholder="e.g. name@nome.com"]
+    fieldset
+      legend
+        | КОМПАНИЯ
+      input[type="text" size="40" placeholder="e.g. your company (optional)"]
+    fieldset
+      legend
+        | ТЕМА ПИСЬМА
+      input[type="text" size="40" placeholder="e.g. info"]
+    fieldset
+      legend
+        | ТЕКС ПИСЬМА
+      input[type="text" size="40" placeholder="e.g. info"]
+    input.butt[type="submit" value="Отправить"]
+  .about_about
+    p
+      | АДРЕС
+    p
+      | Адрес: г.Москва, ул.Профсоюзная, д.96
+    p
+      | Телефон 
+      = link_to "tel:+7-965-395-6343"
+        | +7 (965) 395-6343
+    p
+      | Email: 
+      = link_to "mailto:r1ve@yahoo.com"
+        | r1ve@yahoo.com

@@ -1,10 +1,139 @@
 doctype html
 html
   head
+    meta charset="utf-8"
     title
       | FirstProject
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
   body
-    = yield
+    .container
+      = yield :header
+      nav
+        ul.menu
+          li
+            h4
+              | МЕНЮ
+          li
+            = link_to '/index/show'
+              | ГЛАВНАЯ
+          li
+            = link_to '#'
+              | КАТАЛОГ
+          li
+            = link_to '/about/contacts'
+              | КОНТАКТЫ 
+          li
+            = link_to '/about/contacts'
+              | О НАС
+            ul.submenu
+              li
+                = link_to '#'
+                  | Вкладка1
+              li
+                = link_to '#'
+                  | Вкладка2
+              li
+                = link_to '#'
+                  | Вкладка3
+      .content
+      = yield  
+      footer
+        .social
+          = link_to 'https://www.facebook.com/'
+            = image_tag 'facebook.png', :width=>385
+          = link_to 'https://twitter.com/oldLentach' 
+            = image_tag 'twit.png', :width=>385
+          = link_to 'https://ru.pinterest.com/source/hellyeahsupermanandwonderwoman.tumblr.com/' 
+            = image_tag 'print.png', :width=>385
+        .category
+          h7
+            | Category
+          ul
+            li
+              = link_to '/index/show'
+                | Home
+            li
+              = link_to '#'
+                | about us
+            li
+              = link_to '#'
+                | eshop
+            li
+              = link_to '#'
+                | Features
+            li
+              = link_to '#'
+                | new collection
+            li
+              = link_to '#'
+                | blog
+            li
+              = link_to '#'
+                | contact
+        .account
+          h7
+            | Our Account
+          li
+            = link_to '#'
+              | Your Account
+          li
+            = link_to '#'
+              | Personal information
+          li
+            = link_to '#'
+              | Addresses
+          li
+            = link_to '#'
+              | Discount
+          li
+            = link_to '#'
+              | Orders history
+          li
+            = link_to '#'
+              | Search Terms
+        .suppor
+          h7
+            | Our Support
+          li
+            = link_to '#'
+              | Site Map
+          li
+            = link_to '#'
+              | Search Terms
+          li
+            = link_to '#'
+              | Advanced Search
+          li
+            = link_to '#'
+              | Mobile
+          li
+            = link_to '#'
+              | Contact Us
+          li
+            = link_to '#'
+              | Addresses
+        .newsletter
+          h7
+            | Newsletter
+          br
+          input[type="email" placeholder="Ваш email" required]
+          input[type="submit" value="SUBMIT"]
+        .aboutus
+          h7
+            | About Us
+          p
+            | Телефон 
+            = link_to "tel:+7-965-395-6343"
+              | +7 (965) 395-6343
+          p
+            | Email: 
+            = link_to "mailto:r1ve@yahoo.com"
+              | r1ve@yahoo.com
+          p
+            | Адрес: г.Москва, ул.Профсоюзная, д.96
+        .copyr
+          h6
+            | © Все права защищены
+
