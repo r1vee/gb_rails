@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    meta[charset="utf-8"]
+    meta charset="utf-8"
     = stylesheet_link_tag "application", media: "all"
     title
       | Доставка 
@@ -19,113 +19,114 @@ html
           h3
             | В КАТАЛОГ
       .content
-        nav
-          ul.menu
-            li
-              h4
-                | МЕНЮ
-            li
-              a[href="/index/show"]
-                | ГЛАВНАЯ
-            li
-              a[href="#"]
-                | КАТАЛОГ
-            li
-              a[href="/about/contacts"]
-                | КОНТАКТЫ 
-            li
-              a[href="/about/contacts"]
-                | О НАС
-              ul.submenu
-                li
-                  a[href="#"]
-                    | Вкладка1
-                li
-                  a[href="#"]
-                    | Вкладка2
-                li
-                  a[href="#"]
-                    | Вкладка3
+        
+          
         .main_content
           h5
             | НОВИНКИ
+        ul.menu
+          li
+            h4
+              | МЕНЮ
+          li
+            = link_to '/index/show'
+              | ГЛАВНАЯ
+          li
+            = link_to '#'
+              | КАТАЛОГ
+          li
+            = link_to '/about/contacts'
+              | КОНТАКТЫ 
+          li
+            = link_to '/about/contacts'
+              | О НАС
+            ul.submenu
+              li
+                = link_to '#'
+                  | Вкладка1
+              li
+                = link_to '#'
+                  | Вкладка2
+              li
+                = link_to '#'
+                  | Вкладка3
           
 
       footer
         .social
-          a = link_to 'https://www.facebook.com/' 
-            = image_tag 'facebook.png', :width=>385, :height=>150
-          a = link_to 'https://twitter.com/oldLentach' 
-            = image_tag 'twit.png', :width=>385, :height=>150
-          a = link_to 'https://ru.pinterest.com/source/hellyeahsupermanandwonderwoman.tumblr.com/' 
-            = image_tag 'print.png', :width=>385, :height=>150
+          = link_to 'https://www.facebook.com/'
+            = image_tag 'facebook.png', :width=>385
+          = link_to 'https://twitter.com/oldLentach' 
+            = image_tag 'twit.png', :width=>385
+          = link_to 'https://ru.pinterest.com/source/hellyeahsupermanandwonderwoman.tumblr.com/' 
+            = image_tag 'print.png', :width=>385
 
         .category
           h7
             | Category
           ul
             li
-              a[href="index/show"]
+              = link_to '/index/show'
                 | Home
             li
-              a[href="#"]
+              = link_to '#'
                 | about us
             li
-              a[href="#"]
+              = link_to '#'
                 | eshop
             li
-              a[href="#"]
+              = link_to '#'
                 | Features
             li
-              a[href="#"]
+              = link_to '#'
                 | new collection
             li
-              a[href="#"]
+              = link_to '#'
                 | blog
             li
-              a[href="#"]
+              = link_to '#'
                 | contact
         .account
           h7
             | Our Account
           li
-            a[href="#"]
+            = link_to '#'
               | Your Account
           li
-            a[href="#"]
+            = link_to '#'
               | Personal information
           li
-            a[href="#"]
+            = link_to '#'
               | Addresses
           li
-            a[href="#"]
+            = link_to '#'
               | Discount
           li
-            a[href="#"]
+            = link_to '#'
               | Orders history
           li
-            a[href="#"]
+            = link_to '#'
               | Search Terms
         .suppor
           h7
             | Our Support
           li
-            a[href="#"]
+            = link_to '#'
               | Site Map
           li
-            a[href="#"]
+            = link_to '#'
               | Search Terms
           li
-            a[href="#"]
+            = link_to '#'
               | Advanced Search
           li
-            a[href="#"]
+            = link_to '#'
               | Mobile
           li
-            a[href="#"]
+            = link_to '#'
               | Contact Us
           li
-            a[href="#"]
+            = link_to '#'
               | Addresses
         .newsletter
           h7
@@ -138,11 +139,11 @@ html
             | About Us
           p
             | Телефон 
-            a[href="tel:+7-965-395-6343"]
+            = link_to "tel:+7-965-395-6343"
               | +7 (965) 395-6343
           p
             | Email: 
-            a[href="mailto:r1ve@yahoo.com"]
+            = link_to "mailto:r1ve@yahoo.com"
               | r1ve@yahoo.com
           p
             | Адрес: г.Москва, ул.Профсоюзная, д.96

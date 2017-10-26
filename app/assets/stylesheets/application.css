@@ -116,6 +116,7 @@ header {
 
 .content {
   margin: 25px auto;
+  width: 100%;
 }
 
 .menu {
@@ -195,10 +196,10 @@ header {
 .about_content { 
   background-color: #f8f8f8;
   display: block;
-  position: absolute;
-  left: 667px;
-  top: 370px;
-  width: 870px;
+  position: relative;
+  float: right;
+  margin-right: 50px;
+  width: 65%;
   height: 700px;
   z-index: 1;
 }
@@ -210,10 +211,16 @@ header {
 }
 
 .nav_bread {
+  margin: 10px;
   margin-bottom: 60px;
 }
 
-
+.mailto {
+  position: relative;
+  float: left;
+  width: 330px;
+  margin: 10px;
+}
 
 fieldset {
   border: 0;
@@ -240,7 +247,6 @@ fieldset input {
   position: relative;
   float: right;
   left: -100px;
-  top: -400px;
   font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
   
@@ -257,24 +263,26 @@ fieldset input {
 
 /*footer*/
 
-
-
-
 .social {
-  position: relative;
-  bottom: 150px;
-  left: 180px;
-  margin-bottom: -90px;
+  width: 76%;
 }
 
-.social a {
+
+.social img {
+  position: relative;
+  left: 15%;
+  max-width: 100%;
+  height: auto;
   padding-left: -5px;
   margin-left: -5px;
+  padding-bottom: 115px;
 }
+
+
 
 footer {
   margin-top: calc(100% - 350px);
-  height: 350px;
+  height: 550px;
   background-color: #373737;
   color: #ffffff;
 }
