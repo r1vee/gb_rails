@@ -1,0 +1,302 @@
+$color_1: #FFF500;
+$color_2: #000000;
+$color_3: #ffffff;
+$color_4: #464646;
+$color_5: #6A6969;
+$background_color_1: #f8f8f8;
+$background_color_2: #FFF500;
+$background_color_3: #26d2fc;
+$background_color_4: #000000;
+$background_color_5: #373737;
+
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  min-width: 500px;
+  max-width: 1500px;
+  width: 80%;
+  margin: auto;
+  margin-top: 0;
+  background-color: $background_color_1;
+}
+.logo {
+  position: relative;
+  left: 136px;
+  top: 142px;
+}
+header {
+  width: 100%;
+  height: 700px;
+  background: #abeafa;
+}
+.header_map {
+  width: 100%;
+  height: 350px;
+  background: #abeafa;
+  map {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+.info {
+  position: relative;
+  left: 136px;
+  top: 260px;
+  background-color: $background_color_2;
+  width: 268px;
+  height: 300px;
+  text-align: inherit;
+  h1 {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 60px;
+    font: normal 32px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  p {
+    font: italic 16px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+p {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.news {
+  position: relative;
+  left: 900px;
+  top: -150px;
+  width: 268px;
+  height: 300px;
+  text-align: inherit;
+  h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font: normal 40px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $color_1;
+  }
+  h3 {
+    text-decoration: none;
+    background-color: $background_color_2;
+    margin: 23px;
+    padding: 10px;
+    display: block;
+    width: 120px;
+    font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $color_2;
+    text-align: center;
+  }
+}
+.content {
+  margin: 25px auto;
+  width: 100%;
+}
+.menu {
+  position: relative;
+  float: left;
+  left: 136px;
+  width: 268px;
+  margin-top: -15px;
+  padding: 0;
+  list-style-type: none;
+  a {
+    text-decoration: none;
+    background-color: $background_color_3;
+    padding: 10px;
+    display: block;
+    width: 250px;
+    height: 19px;
+    font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $color_2;
+    &:hover {
+      text-decoration: none;
+      background-color: $background_color_4;
+      padding: 10px;
+      display: block;
+      width: 250px;
+      height: 19px;
+      font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: $color_3;
+    }
+  }
+  h4 {
+    text-decoration: none;
+    background-color: $background_color_4;
+    padding: 10px;
+    display: block;
+    width: 250px;
+    height: 47px;
+    font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $color_3;
+  }
+  li {
+    &:hover {
+      ul {
+        display: block;
+      }
+    }
+  }
+}
+.submenu {
+  list-style-type: none;
+  width: 250px;
+  position: relative;
+  padding: 10px;
+  left: 309px;
+  margin: -49px;
+  height: 19px;
+  display: none;
+  z-index: 2;
+}
+.main_content {
+  background-color: $background_color_1;
+  float: left;
+  display: block;
+  position: relative;
+  left: 200px;
+  top: -40px;
+  width: 65%;
+  height: 700px;
+  z-index: 1;
+  h5 {
+    padding: 26px;
+    font: 22px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+.about_content {
+  background-color: $background_color_1;
+  display: block;
+  position: relative;
+  float: right;
+  margin-right: 50px;
+  width: 65%;
+  height: 700px;
+  z-index: 1;
+}
+.nav_bread {
+  a {
+    font: 16px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: $color_4;
+  }
+  margin: 10px;
+  margin-bottom: 60px;
+}
+.mailto {
+  position: relative;
+  float: left;
+  width: 330px;
+  margin: 10px;
+}
+fieldset {
+  border: 0;
+  font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 25px;
+  input {
+    padding-left: 15px;
+    height: 30px;
+    font: 16px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+.butt {
+  color: $color_2;
+  background: #FFF500;
+  border: #FFF500;
+  height: 40px;
+  width: 110px;
+  font: 16px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.about_about {
+  position: relative;
+  float: right;
+  left: -100px;
+  font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.social {
+  width: 76%;
+  img {
+    position: relative;
+    left: 15%;
+    max-width: 100%;
+    height: auto;
+    padding-left: -5px;
+    margin-left: -5px;
+    padding-bottom: 115px;
+  }
+}
+footer {
+  margin-top: calc(100% - 350px);
+  height: 550px;
+  background-color: $background_color_5;
+  color: $color_3;
+  a {
+    font: 14px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $color_3;
+    text-decoration: none;
+  }
+  p {
+    font: 14px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $color_3;
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
+  input {
+    &:required {
+      background: #FFF500;
+      color: $color_5;
+      padding-left: 15px;
+      height: 30px;
+      border: 0;
+      margin: 0;
+    }
+    &:last-of-type {
+      height: 30px;
+      width: 65px;
+      color: $color_3;
+      background: #000000;
+      border: #000000;
+      margin-left: -5px;
+    }
+  }
+}
+h7 {
+  font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $color_3;
+}
+.category {
+  float: left;
+  padding-left: 200px;
+}
+.account {
+  float: left;
+  padding-left: 110px;
+}
+.suppor {
+  float: left;
+  padding-left: 80px;
+}
+.newsletter {
+  float: left;
+  padding-left: 80px;
+}
+.aboutus {
+  float: left;
+  padding-left: 45px;
+  p {
+    padding-left: 0px;
+  }
+}
+.copyr {
+  position: relative;
+  background: #000000;
+  width: 100%;
+  height: 40px;
+  bottom: -250px;
+}
