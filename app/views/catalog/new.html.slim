@@ -1,0 +1,39 @@
+- content_for :header do
+  header
+    .logo = image_tag 'logo.png' 
+
+.about_content
+  h1
+    | Добавить продукт
+
+  = form_with(scope: :catalog, url: catalog_path, local: true) do |form|
+    p
+      = form.label :name, 'Наименование'
+      br/
+      = form.text_field :name
+    p
+      = form.label :img, 'Изображение'
+      br/
+      = form.text_field :img
+    p
+      = form.label :price, 'Цена'
+      br/
+      = form.text_field :price
+    p
+      = form.label :country, 'Страна'
+      br/
+      = form.text_field :country
+    p
+      = form.label :energy, 'Энергетическая ценность'
+      br/
+      = form.text_field :energy
+    p
+      = form.label :weight, 'Вес'
+      br/
+      = form.text_field :weight
+    p
+      = form.label :text, 'Описание'
+      br/
+      = form.text_area :text
+    p
+      = form.submit

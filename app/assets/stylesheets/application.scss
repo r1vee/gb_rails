@@ -8,6 +8,7 @@ $background_color_2: #FFF500;
 $background_color_3: #26d2fc;
 $background_color_4: #000000;
 $background_color_5: #373737;
+$background_color_6: #ffffff;
 
 @charset "utf-8";
 * {
@@ -22,17 +23,7 @@ $background_color_5: #373737;
   margin-top: 0;
   background-color: $background_color_1;
 }
-.logo {
-  position: relative;
-  left: 136px;
-  top: 142px;
-}
 header {
-  width: 100%;
-  height: 700px;
-  background: #abeafa;
-}
-.header_map {
   width: 100%;
   height: 350px;
   background: #abeafa;
@@ -44,6 +35,16 @@ header {
     padding: 0;
     margin: 0;
   }
+}
+.header_main {
+  width: 100%;
+  height: 700px;
+  background: #abeafa;
+}
+.logo {
+  position: relative;
+  left: 136px;
+  top: 142px;
 }
 .info {
   position: relative;
@@ -174,6 +175,7 @@ p {
   position: relative;
   float: right;
   margin-right: 50px;
+  margin-top: -40px;
   width: 65%;
   height: 700px;
   z-index: 1;
@@ -185,8 +187,82 @@ p {
     color: $color_4;
   }
   margin: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
+
+.cat_position_1 {
+  img {
+    position: relative;
+    top: 60px;
+    left: 10px;
+    margin-bottom: 100px;
+  }
+  background-color: $background_color_6;
+  width: 270px;
+  height: 320px;
+  position: relative;
+  float: left;
+}
+.cat_position_2 {
+  background-color: $background_color_6;
+  width: 270px;
+  height: 320px;
+  position: relative;
+  float: left;
+  left: 30px;
+}
+.cat_position_3 {
+  img {
+    position: relative;
+    top: 60px;
+    left: 10px;
+    margin-bottom: 100px;
+  }
+  background-color: $background_color_6;
+  width: 270px;
+  height: 320px;
+  position: relative;
+  float: left;
+  left: 60px;
+}
+.cat_position_4 {
+  background-color: $background_color_6;
+  width: 270px;
+  height: 320px;
+  position: relative;
+  float: left;
+  top: 60px;
+}
+.cat_position_5 {
+  background-color: $background_color_6;
+  width: 270px;
+  height: 320px;
+  position: relative;
+  float: left;
+  top: 60px;
+  left: 30px;
+}
+.cat_position_6 {
+  background-color: $background_color_6;
+  width: 270px;
+  height: 320px;
+  position: relative;
+  float: left;
+  top: 60px;
+  left: 60px;
+}
+.name_fruit {
+  a {
+    text-decoration: none;
+    color: $color_2;
+  }
+  position: relative;
+  width: 250px;
+  padding-left: 10px;
+  text-align: center;
+  font: 18px "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .mailto {
   position: relative;
   float: left;
