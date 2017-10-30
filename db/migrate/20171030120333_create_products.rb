@@ -8,7 +8,7 @@ class CreateProducts < ActiveRecord::Migration[5.1]
       t.integer :energy
       t.integer :weight
       t.text :description
-      t.timestamps
+      t.timestamps null: true, default: Time.now
     end    
     add_index :products, :name, unique: true
   end

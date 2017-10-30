@@ -1,0 +1,50 @@
+- content_for :header do
+  header
+    .logo = image_tag 'logo.png' 
+
+.about_content
+  h1
+    | Добавить продукт
+
+
+  / = form_for @product, :url => { :action => "create" }, :html => {:id => 'new_products' } do |f|
+  /   label Наименование
+  /   = f.text_field :name
+  /   br/
+  /   label Изображение
+  /   = f.text_field  :img
+  /   br/
+  /   label Цена
+  /   = f.text_field :price
+  /   br/
+  /   label Страна
+  /   = f.text_field :country
+  /   br/
+  /   label Энергетическая ценность
+  /   = f.text_field :energy
+  /   br/
+  /   label Вес
+  /   = f.text_field :weight
+  /   br/
+  /   label Описание
+  /   = f.text_area :description
+  /   br/
+  /   = submit_tag 'Добавить'
+
+
+  = simple_form_for @product, :url => { :action => "create" }, :html => {:id => 'new_products' } do |f|
+    = f.input :name, :label => 'Наименование'
+    br/
+    = f.input :img, :label => 'Название зображения'
+    br/
+    = f.input :price, :label => 'Цена'
+    br/
+    = f.input :country, as: :string, :label =>  'Страна'
+    br/
+    = f.input :energy, :label => 'Энергетическая ценность'
+    br/
+    = f.input :weight, :label => 'Вес'
+    br/
+    = f.input :description, :as => :text, :label => 'Описание'
+    br/
+    = f.button :submit

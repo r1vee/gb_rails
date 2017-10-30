@@ -15,6 +15,13 @@ class CatalogController < ApplicationController
   #   def catalog_params
   #     params.require(:catalog).permit(:name, :img, :price, :country, :energy, :weight, :text)
   #   end
-  
-
+  def index
+  end
+  def create
+    if @catalog = Catalog.create(params[:catalog])
+      # Товар успешно добавлен
+    else
+      # Ошибка!
+    end
+  end
 end

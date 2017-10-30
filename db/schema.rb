@@ -10,14 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171029025052) do
-
-  create_table "articles", force: :cascade do |t|
-    t.string "title"
-    t.text "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20171030121349) do
 
   create_table "catalog", force: :cascade do |t|
     t.string "name", null: false
@@ -84,8 +77,6 @@ ActiveRecord::Schema.define(version: 20171029025052) do
     t.integer "energy"
     t.integer "weight"
     t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["name"], name: "index_products_on_name", unique: true
   end
 

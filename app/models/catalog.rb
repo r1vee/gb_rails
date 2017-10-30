@@ -6,4 +6,5 @@ class Catalog < ApplicationRecord
   validates :img, length: { maximum: 30, minimum: 2 }
   validates :country, length: { maximum: 30, minimum: 2 }
   validates :description, length: { maximum: 8000, minimum: 1 }
+  validates_presence_of :name, :price
 end

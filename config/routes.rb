@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-
-
-  get 'catalog/show', to: 'catalog#show'
+  resources :products
+  get 'catalog/index', to: 'catalog#index'
   # get 'catalog/new', to: 'catalog#new'
 
   
